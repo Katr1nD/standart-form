@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping list</title>
+</head>
+
+<body>
+    <h1>Shopping list</h1>
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <legend>First step</legend>
+            <div>
+                <label for="username">Full name</label><br />
+                <input placeholder="Text your full name" type="text" name="username" id="username" />
+            </div>
+            <div>
+                <label for="userpassword">Password</label><br />
+                <input type="password" name="userpassword" id="userpassword" />
+            </div>
+            <div>
+                <label for="phonenumb">Phone number</label><br />
+                <input placeholder="Enter your phone number" type="tel" name="phone" id="phonenumb" />
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <div>
+                    <input checked type="radio" name="sex" value="male" id="gender" />Male
+                </div>
+                <div>
+                    <input type="radio" name="sex" value="female" id="gender" />Female
+                </div>
+            </div><br />
+            <div>
+                <label for="photo">Attach a photo</label>
+                <input type="file" name="photo">
+            </div>
+            <div>
+                <p>Enter your address</p>
+
+                <select name="city">
+                    <option hidden disabled selected value="selectCity">Select your city</option>
+                    <option value="Kiev">Kiev</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Odessa">Odessa</option>
+                    <option value="Kharkiv">Kharkiv</option>
+                    <option value="Vinnytsia">Vinnytsia</option>
+                </select>
+
+                <select name="postOffice">
+                    <option hidden disabled selected value="selectPotOffice">Select the post office</option>
+                    <option value="1">№1</option>
+                    <option value="2">№2</option>
+                    <option value="3">№3</option>
+                    <option value="4">№4</option>
+                    <option value="5">№5</option>
+                </select>
+
+            </div>
+        </fieldset><br />
+
+        <fieldset>
+            <legend>Second step</legend>
+            <label for="list">Shopping list</label>
+            <div>
+                <input type="checkbox" name="milk" id="list" />Milk
+            </div>
+            <div>
+                <input type="checkbox" name="bread" id="list" />Bread
+            </div>
+            <div>
+                <input type="checkbox" name="Cheese" id="list" />Cheese
+            </div>
+            <div>
+                <input type="checkbox" name="butter" id="list" />Butter
+            </div>
+            <div>
+                <input type="checkbox" name="eggs" id="list" />Eggs
+            </div>
+            <div>
+                <input type="checkbox" name="coffee" id="list" />Coffee
+            </div>
+            <div>
+                <input type="checkbox" name="tea" id="list" />Tea
+            </div>
+            <div>
+                <input type="checkbox" name="water" id="list" />Water
+            </div>
+        </fieldset><br />
+
+        <fieldset>
+            <legend>Third step</legend>
+            <div>
+                <label for="delDate">When do you want to receive your order?</label><br />
+                <input type="date" name="delivDate" id="delDate">
+            </div>
+            <div>
+                <p>Additional Information</p>
+                <textarea name="text" cols="30" rows="5"></textarea>
+            </div><br />
+
+        </fieldset>
+        <label>
+            <input type="checkbox" name="conditions">
+            I agree to the <a href="#">privacy policy</a> and <a href="#">terms of use</a>
+        </label>
+        <div>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
